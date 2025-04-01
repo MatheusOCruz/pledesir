@@ -1,7 +1,10 @@
 ---
 layout: page
-title: Projeto GT-ORAN 
+title: Projeto Pledesir 
 exclude: true
 ---
 
-### Framework para desenvolvimento de xApps baseados em machine learning
+### Plataforma experimental para desenvolvimento de serviços inteligentes em 5G/6G no âmbito de interfaces abertas na RAN
+
+
+

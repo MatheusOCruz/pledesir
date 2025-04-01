@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2025-03-02T19:33:42+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">GT ORAN-QOS</title><subtitle></subtitle><entry><title type="html">Implementação de Estratégias de Handover em um Ambiente de Simulação para Open RAN</title><link href="http://0.0.0.0:4000/2023/12/19/handover-simulacao-ORAN.html" rel="alternate" type="text/html" title="Implementação de Estratégias de Handover em um Ambiente de Simulação para Open RAN" /><published>2023-12-19T00:00:00+00:00</published><updated>2023-12-19T00:00:00+00:00</updated><id>http://0.0.0.0:4000/2023/12/19/handover-simulacao-ORAN</id><content type="html" xml:base="http://0.0.0.0:4000/2023/12/19/handover-simulacao-ORAN.html"><![CDATA[<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2025-04-01T18:48:41+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">GT ORAN-QOS</title><subtitle></subtitle><entry><title type="html">Implementação de Estratégias de Handover em um Ambiente de Simulação para Open RAN</title><link href="http://0.0.0.0:4000/2023/12/19/handover-simulacao-ORAN.html" rel="alternate" type="text/html" title="Implementação de Estratégias de Handover em um Ambiente de Simulação para Open RAN" /><published>2023-12-19T00:00:00+00:00</published><updated>2023-12-19T00:00:00+00:00</updated><id>http://0.0.0.0:4000/2023/12/19/handover-simulacao-ORAN</id><content type="html" xml:base="http://0.0.0.0:4000/2023/12/19/handover-simulacao-ORAN.html"><![CDATA[<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
@@ -17,7 +17,7 @@
     figcaption{ padding-left: 55px; }
   </style>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 <header id="title-block-header">
@@ -97,7 +97,7 @@ a2a4TargetCell(x) =   \begin{cases} maxRsrqTargetCell(x) &amp; \text{se $(b-a)&g
 <h2 data-number="4.1" id="cenários-de-simulação"><span class="header-section-number">4.1</span> Cenários de Simulação</h2>
 <p>A topologia do cenário de simulação (Figura <a href="#fig:simulation_topology" data-reference-type="ref" data-reference="fig:simulation_topology">5</a>) permite avaliar o desempenho do <span data-acronym-label="HO" data-acronym-form="singular+short">HO</span> inter-eNBs subordinados a uma mesma <span data-acronym-label="MME" data-acronym-form="singular+short">MME</span> <span class="citation" data-cites="Tayyab_2019">(Tayyab, Gelabert, and Jantti 2019)</span>, executados através da interface X2. O cenário é composto por três <span data-acronym-label="eNB" data-acronym-form="plural+short">eNBs</span> (vermelho) dispostos de maneira equidistante. Os componentes do núcleo da rede LTE (PGW, SGW, MME) são mostrados em azul na lateral superior esquerda. O <span data-acronym-label="near-RT RIC" data-acronym-form="singular+short">near-RT RIC</span> e seus <em>xApps</em> foram instalados no <span data-acronym-label="SGW" data-acronym-form="singular+short">SGW</span>. Os seis <span data-acronym-label="UE" data-acronym-form="plural+short">UEs</span> (verde) são separados em dois grupos, traçando movimentos triangulares dentro e fora do triângulo formado pelos <span data-acronym-label="eNB" data-acronym-form="plural+short">eNBs</span>. As velocidades de movimentação foram escolhidas conforme indicado em <span class="citation" data-cites="IMT_2020">(ITU 2017)</span>. Pedestres, <span class="math inline">\(\leq10 km/h\)</span>, são representados pelos UE0 (<span class="math inline">\(0.2m/s\)</span>) e UE1 (<span class="math inline">\(1m/s\)</span>). Veículos, <span class="math inline">\(\leq120 km/h\)</span>, são representados pelos UE2 (<span class="math inline">\(5m/s\)</span>), UE3 (<span class="math inline">\(10m/s\)</span>), UE4 (<span class="math inline">\(5m/s\)</span>) e UE5 (<span class="math inline">\(30m/s\)</span>).</p>
 <figure>
-<img src="/source/handover/SimulationTopologyUpdated.png" id="fig:simulation_topology" style="width:80.0%" alt="" /><figcaption style="padding-left: 75px">Topologia simulada</figcaption>
+<img src="/source/handover/SimulationTopologyUpdated.png" id="fig:simulation_topology" style="width:80.0%" alt="" /><figcaption  style="padding-left: 75px">Topologia simulada</figcaption>
 </figure>
 <p>São comparados seis cenários distintos. O primeiro cenário é composto de uma rede LTE padrão, sem interferência do RIC. Neste caso, as decisões de <span data-acronym-label="HO" data-acronym-form="plural+short">HOs</span> são tomadas pelo algoritmo de <span data-acronym-label="HO" data-acronym-form="singular+short">HO</span> do <span data-acronym-label="eNB" data-acronym-form="singular+short">eNB</span> e executadas imediatamente. Todos os cenários seguintes são compostos de redes LTE com O-RAN. O segundo, terceiro e quarto cenários seguem o comportamento mostrado na Figura <a href="#fig:enb_initiated_handover" data-reference-type="ref" data-reference="fig:enb_initiated_handover">3</a>, com disparos de <span data-acronym-label="HO" data-acronym-form="singular+short">HO</span> iniciados pelo <span data-acronym-label="eNB" data-acronym-form="singular+short">eNB</span>. No segundo cenário, a decisão que seria feita por um <em>xApp</em> é substituída pela sugestão feita pelo próprio <span data-acronym-label="eNB" data-acronym-form="singular+short">eNB</span> na mensagem de disparando do <span data-acronym-label="HO" data-acronym-form="singular+short">HO</span>. No terceiro e quarto cenários, dois <em>xApps</em> desenvolvidos escolhem a decisão da célula de destino baseado em suas políticas internas, ou rejeitam o pedido de <span data-acronym-label="HO" data-acronym-form="singular+short">HO</span>, impedindo que o <span data-acronym-label="HO" data-acronym-form="singular+short">HO</span> seja iniciado. O quinto e sexto cenários tem os <em>xApps</em> como fontes de disparo do <span data-acronym-label="HO" data-acronym-form="singular+short">HO</span>, conforme mostrado na Figura <a href="#fig:xapp_initiated_handover" data-reference-type="ref" data-reference="fig:xapp_initiated_handover">4</a>.</p>
 <h2 data-number="4.2" id="métricas-de-avaliação-do-desempenho-e-confiança-estatística"><span class="header-section-number">4.2</span> Métricas de Avaliação do Desempenho e Confiança Estatística</h2>
@@ -105,79 +105,19 @@ a2a4TargetCell(x) =   \begin{cases} maxRsrqTargetCell(x) &amp; \text{se $(b-a)&g
 <p>As simulações foram executadas 20 vezes para cada cenário, com <em>seeds</em> gerados aleatoriamente. Os resultados serão mostrados com as margens de erro para um intervalo de confiança de 95%. As simulações têm duração de 10 minutos, com uma transmissão por UE a cada 1 segundo, mantendo uma conexão ativa com um servidor remoto.</p>
 <h2 data-number="4.3" id="resultados-e-discussões"><span class="header-section-number">4.3</span> Resultados e Discussões</h2>
 <p>Os resultados coletados nas simulações estão dispostos na  <a href="#tab:resultados" data-reference-type="ref" data-reference="tab:resultados">Tabela</a>. A primeira linha é o caso de referência, sem O-RAN. Neste caso, o número de <em>handovers</em> iniciados foi estável em todas as simulações. O número de conexões estabelecidas foi de apenas 6, sendo uma por UE, conforme esperado. A segunda linha, já com o RIC sendo adicionado e aumentando a latência até o início dos <em>handovers</em> em aproximadamente 10 ms não causou nenhuma diferença no número de <em>handovers</em> concluídos ou conexões estabelecidas. É um resultado interessante que mostra que o atraso de comunicação com o <span data-acronym-label="near-RT RIC" data-acronym-form="singular+short">near-RT RIC</span> não deve impactar, por si só, no desempenho da RAN.</p>
-<div id="tab:resultados">
+<div id="tab:resultados" markdown="1">
 
-      <table>
-        <thead>
-          <tr>
-            <th>Fonte do Disparo</th>
-            <th>Decisor</th>
-            <th>Disparos Efetuados</th>
-            <th>Disparos Cancelados</th>
-            <th>Handovers Iniciados</th>
-            <th>Handovers Concluídos</th>
-            <th>Conexões Restabelecidas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td> </td>
-            <td>eNB</td>
-            <td>-</td>
-            <td>-</td>
-            <td>30±0</td>
-            <td>30±0</td>
-            <td>0±0</td>
-          </tr>
-          <tr>
-            <td>eNB</td>
-            <td>RIC+eNB</td>
-            <td>30±0</td>
-            <td>0</td>
-            <td>30±0</td>
-            <td>30±0</td>
-            <td>0±0</td>
-          </tr>
-          <tr>
-            <td>eNB</td>
-            <td><em>xApp</em> + K-Means</td>
-            <td>1802±102</td>
-            <td>1784±102</td>
-            <td>17±1</td>
-            <td>17±1</td>
-            <td>24±1</td>
-          </tr>
-          <tr>
-            <td>eNB</td>
-            <td><em>xApp</em> + MaxRsrq</td>
-            <td>1528±90</td>
-            <td>1512±90</td>
-            <td>16±0</td>
-            <td>16±0</td>
-            <td>18±1</td>
-          </tr>
-          <tr>
-            <td>RIC</td>
-            <td><em>xApp</em> + K-Means</td>
-            <td>125±24</td>
-            <td>0</td>
-            <td>122±24</td>
-            <td>122±24</td>
-            <td>134±25</td>
-          </tr>
-          <tr>
-            <td>RIC</td>
-            <td><em>xApp</em> + MaxRsrq</td>
-            <td>18±1</td>
-            <td>0</td>
-            <td>18±1</td>
-            <td>18±1</td>
-            <td>20±0</td>
-          </tr>
-        </tbody>
-      </table>
+| Fonte do Disparo | Decisor          | Disparos Efetuados | Disparos Cancelados | Handovers Iniciados | Handovers Concluídos | Conexões Restabelecidas |
+|-------------------|------------------|---------------------|----------------------|----------------------|------------------------|--------------------------|
+|                   | eNB              |                   - |                    - |         30±0         |           30±0         |            0±0           |
+| eNB               | RIC+eNB          |            30±0     |                    0 |         30±0         |           30±0         |            0±0           |
+| eNB               | *xApp* + K-Means |      1802±102      |        1784±102       |         17±1         |           17±1         |          24±1            |
+| eNB               | *xApp* + MaxRsrq |       1528±90      |         1512±90       |         16±0         |           16±0         |          18±1            |
+| RIC               | *xApp* + K-Means |         125±24     |                    0 |        122±24        |          122±24        |         134±25           |
+| RIC               | *xApp* + MaxRsrq |           18±1     |                    0 |          18±1        |            18±1        |           20±0           |
 
-    </div>
+
+</div>
 <p>Na terceira linha, temos os resultados de um dos <em>xApps</em> construídos utilizando a técnica K-Means de <span data-acronym-label="ML" data-acronym-form="singular+short">ML</span>. Neste caso, o número de disparos e cancelamentos é grande. Isto ocorre porque o eNB está acionando o RIC de acordo com a política do algoritmo A2A4, usado também nos dois primeiros cenários, mas o <em>xApp</em> julga o <em>handover</em> desnecessário em razão de sua política interna baseada no K-Means. Para uso eficiente do canal de controle entre nós E2 e <span data-acronym-label="near-RT RIC" data-acronym-form="singular+short">near-RT RIC</span>, é necessário que ambas as políticas sejam coincidentes ou que o RIC tome as decisões sem ser acionado pelo eNB, como veremos adiante nos quinto e sexto cenários. Ainda neste terceiro cenário, o número de <em>handovers</em> iniciados e concluídos é menor que o caso de referência, porém o número médio de conexões reestabelecidas é próximo de 5 vezes por UE, indicando a interrupção do serviço por 4 vezes durante os 10 minutos simulados.</p>
 <p>Na quarta linha, temos os resultados de outro cenário com um <em>xApp</em>, desta vez utilizando apenas o máximo Rsrq das células vizinhas ao UE que se deseja fazer <em>handover</em>. O número de disparos e cancelamentos continua alto, pelo mesmo motivo do caso anterior. O número de <em>handovers</em> iniciados e concluídos é menor, porém o número de conexões reestabelecidas também é menor, indicando superioridade à política do K-Means, ainda que seja pior que a política do A2A4 do caso de referência.</p>
 <p>Na quinta linha, o resultado do <em>xApp</em> com K-Means mostra a forte redução do número de disparos de <em>handover</em>. Isto se deve a fonte do disparo, que deixa de ser o eNB conectado ao UE e passa a ser o próprio <em>xApp</em>. Por outro lado, o <em>xApp</em> iniciou mais <em>handovers</em>, devido à instabilidade do K-Means implementado e a falta de um intervalo de guarda ou algoritmo de saturação. A instabilidade resultou no efeito ping-pong, onde o <em>handover</em> era feito consecutivamente entre um conjunto de eNBs.</p>
